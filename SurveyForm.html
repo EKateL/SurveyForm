@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="SurveyForm.css">
+    <title>Survey Form</title>
+
+<body>
+    
+    <h1 id="title">SURVEY FORM</h1>
+      
+    <div class="grid">
+
+        <div class="row">
+            <div class="col-12">
+                <p align="center" id="description">
+              Let us know how we can improve freeCodeCamp
+            </p>
+            </div>
+        </div>
+
+        <form id="survey-form">
+            <div class="row">
+                <div class="col-6" style="text-align: right; margin-right: 10px;">
+                    <label id="name-label" for="name">* Name:</label>
+                </div>
+                <div class="col-6" style="text-align: left; margin-left: 40px;">
+                    <input class="heighttext" type="text"  size="60" id="name" placeholder="Enter your name" required>
+                </div>
+             </div>
+
+             <div class="row">
+                <div class="col-6" style="text-align: right; margin-right: 10px;">
+                    <label id="email-label" for="email">* Email:</label>
+                </div>
+                <div class="col-6" style="text-align: left; margin-left: 40px;">
+                    <input type="email"  size="60" id="email" placeholder="Enter your Email" required >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6" style="text-align: right; margin-right: 10px;">
+                    <label id="number-label" for="number">* Age:</label>
+                </div>
+                <div class="col-6" style="text-align: left; margin-left: 40px;">
+                    <input type="number" id="number" style="width: 365px;" min="5" max="125" placeholder="Age" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6" id="select" style="text-align: right; margin-right: 10px;">
+                    <p style="margin-top: 3px;">Which option best describes your current role?</p>
+                </div>
+                <div class="col-6" class="list" id="select" style="text-align: left; margin-left: 40px; ">
+                    <select name="like_most" class="like_most" id="dropdown"> 
+                        <option>Student</option>
+                        <option>Full time Job</option>
+                        <option>Full time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+  
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-6" style="text-align: right; margin-right: 10px;">
+                    <p style="margin-top: 0px;">* How likely is that you would recommend freeCodeCamp to a friend?</p>
+                </div>
+                <div class="col-6" class="list" style="text-align: left; margin-left: 40px;">
+                    <input type="radio" value="1" name="Definitely-Maybe-Not sure">Definitely<br>
+                    <input type="radio" value="2" name="Definitely-Maybe-Not sure">Maybe<br>
+                    <input type="radio" value="3" name="Definitely-Maybe-Not sure">Not Sure
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6" id="select" style="text-align: right; margin-right: 10px;">
+                    <p style="margin-top: 3px;">What do you like most in FCC:</p>
+                </div>
+                <div class="col-6" class="list" id="select" style="text-align: left; margin-left: 40px; ">
+                    <select name="like_most" class="like_most"> 
+                        <option>Sellect an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+  
+                    </select>
+                </div>
+            </div>
+
+
+             <div class="row">
+                <div class="col-6" style="text-align: right; margin-right: 10px;">
+                    <p style="margin-top: 3px;">Things that should be improved in the future (Check all that apply):</p>
+                </div>
+                <div class="col-6" class="list" style="text-align: left; margin-left: 40px;">
+                    <input type="checkbox" value="1" name="Things-For-Improvement" style>Front-end Projects<br>
+                    <input type="checkbox" value="2" name="Things-For-Improvement" style>Back-end Projects<br>
+                    <input type="checkbox" value="3" name="Things-For-Improvement" style>Data Visualization<br>
+                    <input type="checkbox" value="4" name="Things-For-Improvement" style>Challenges<br>
+                    <input type="checkbox" value="5" name="Things-For-Improvement" style>Open Source Community<br>
+                     <input type="checkbox" value="6" name="Things-For-Improvement" style>Gitter help rooms<br>
+                     <input type="checkbox" value="7" name="Things-For-Improvement" style>Videos<br>
+                    <input type="checkbox" value="8" name="Things-For-Improvement" style>City Meetups<br>
+                     <input type="checkbox" value="9" name="Things-For-Improvement" style>Wiki<br>
+                    <input type="checkbox" value="10" name="Things-For-Improvement" style>Forum<br>
+                    <input type="checkbox" value="11" name="Things-For-Improvement" style>Additional Courses<br>
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="col-6" style="text-align: right; margin-right: 10px;">
+                    <label for="name">Any Comments or Suggestions?</label>
+                </div>
+                <div class="col-6" style="text-align: left; margin-left: 40px;">
+                    <textarea style="width: 300px;">Enter your comment here...</textarea>
+                </div>
+             </div>
+
+            <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <button class="button" type="submit" id="submit"><strong>SUBMIT</strong></button>
+            </div>
+
+        </div>
+
+        </form>
+    </div>
+           
+</body>
